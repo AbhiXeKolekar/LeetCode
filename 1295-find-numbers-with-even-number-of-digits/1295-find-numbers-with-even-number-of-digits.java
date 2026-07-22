@@ -6,7 +6,7 @@ class Solution {
             int num = nums[i];
             int digCount = 0;
 
-            while(num > 0){
+            while(num != 0){
                 num = num / 10;
                 digCount++;
             }
