@@ -7,14 +7,15 @@ class Solution {
         while(left < right){
             int hL = height[left];
             int hR = height[right];
+            int width = right - left;
             int area;
             
             if(hL < hR){
-                area = hL * (right - left);
+                area = hL * width;
                 left++;
             }
             else{
-                area = hR * (right - left);
+                area = hR * width;
                 right--;
             }
 
