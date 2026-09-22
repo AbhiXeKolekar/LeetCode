@@ -7,8 +7,9 @@ class Solution {
             for(int j = 0; j < accounts[i].length; j++){
                 wealth += accounts[i][j];
             }
-            if(richest < wealth) richest = wealth;
+            if(wealth > richest) richest = wealth;
         }
+
         return richest;
     }
 }
