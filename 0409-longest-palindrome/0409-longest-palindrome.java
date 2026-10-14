@@ -13,13 +13,18 @@ class Solution {
         }
 
         int length = 0;
+        boolean flag = false;
 
         for(Map.Entry<Character, Integer> entry : set.entrySet()){
             if(entry.getValue() % 2 == 0) length += entry.getValue();
             else {
                 length += entry.getValue() - 1;
-                if(length % 2 == 0) length++;
+                flag = true;
             }
+        }
+
+        if(flag == true){
+            length ++;
         }
 
         return length;
