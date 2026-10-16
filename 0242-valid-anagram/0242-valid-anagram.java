@@ -12,12 +12,12 @@ class Solution {
             if(sMap.containsKey(s_letter)){
                 sMap.put(s_letter, sMap.get(s_letter) + 1);
             }
-            else sMap.put(s_letter, 0);
+            else sMap.put(s_letter, 1);
 
             if(tMap.containsKey(t_letter)){
                 tMap.put(t_letter, tMap.get(t_letter) + 1);
             }
-            else tMap.put(t_letter, 0);
+            else tMap.put(t_letter, 1);
         }     
 
         if(sMap.equals(tMap)) return true;
