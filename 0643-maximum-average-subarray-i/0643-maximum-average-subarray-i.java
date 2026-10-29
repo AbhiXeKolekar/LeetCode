@@ -9,8 +9,7 @@ class Solution {
         int max_sum = sum;
 
         for(int i = k; i < nums.length; i++){
-            sum += nums[i];
-            sum -= nums[i - k];
+            sum = sum + nums[i] - nums[i - k];
 
             if(sum > max_sum) max_sum = sum;
         }
