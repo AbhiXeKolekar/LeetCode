@@ -23,10 +23,9 @@ class Solution {
 
         if(map1.equals(map2)) return true;
 
-        while(right < s2.length()){
+        while(right < s2.length() - 1){
             left++;
             right++;
-            if(right >= s2.length()) break;
 
             char x = s2.charAt(left - 1);
             map2.put(x, map2.get(x) - 1);
